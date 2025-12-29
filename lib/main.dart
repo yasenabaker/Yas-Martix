@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:yas_martix/core/theme/app_theme.dart';
 
 void main() {
   runApp(const App());
@@ -11,10 +12,8 @@ class App extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       themeMode: ThemeMode.system,
-      darkTheme: ThemeData(),
-      theme: ThemeData(
-        
-      ),
+      darkTheme: YAppTheme.darkTheme,
+      theme: YAppTheme.lightTheme,
     );
   }
 }
