@@ -1,0 +1,5 @@
+class YApiConstants {
+  YApiConstants._();
+
+
+}

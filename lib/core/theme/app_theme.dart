@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:yas_martix/core/constans/app_colors.dart';
+import 'package:yas_martix/core/constants/app_colors.dart';
 import 'package:yas_martix/core/theme/custom_themes/app_bar_theme.dart';
 import 'package:yas_martix/core/theme/custom_themes/bottom_sheet_theme.dart';
 import 'package:yas_martix/core/theme/custom_themes/check_box_theme.dart';

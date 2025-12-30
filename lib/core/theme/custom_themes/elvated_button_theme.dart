@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:yas_martix/core/constans/app_colors.dart';
+import 'package:yas_martix/core/constants/app_colors.dart';
 
 class YElvatedButtonTheme {
   YElvatedButtonTheme._();
