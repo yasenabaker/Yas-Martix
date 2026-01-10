@@ -15,9 +15,12 @@ class YSizes {
   static const double iconLg = 32.0;
 
   // Font sizes
-  static const double fontSizeSx = 14.0;
-  static const double fontSizeSm = 16.0;
-  static const double fontSizeMd = 18.0;
+  static const double fontSize14 = 14.0;
+  static const double fontSize16 = 16.0;
+  static const double fontSize18 = 18.0;
+  static const double fontSize32 = 32.0;
+  static const double fontSize24 = 24.0;
+  static const double fontSize12 = 12.0;
 
   // Button sizes
   static const double buttonHeigt = 18.0;

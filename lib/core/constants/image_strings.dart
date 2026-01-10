@@ -10,7 +10,8 @@ class YImageStrings {
   static const String facebook = "";
 
   // -- Onboarding images
-  static const String onboardingImage1 = "assets/images/onboarding_images/onboarding-image-one.gif";
-  static const String onboardingImage2 = "assets/images/onboarding_images/onboarding-image-two.gif";
-  static const String onboardingImage3 = "assets/images/onboarding_images/onboarding-image-three.gif";
+
+  static const String onboardingImage1 = "assets/lottie/onboarding-one.json";
+  static const String onboardingImage2 = "assets/lottie/onboarding-two.json";
+  static const String onboardingImage3 = "assets/lottie/delivery service.json";
 }
