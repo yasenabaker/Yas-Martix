@@ -9,7 +9,7 @@ class YOutlinedButtonTheme {
         style: OutlinedButton.styleFrom(
           elevation: 0,
           foregroundColor: YAppColors.black,
-          side: const BorderSide(color: YAppColors.primary),
+          side: const BorderSide(color: YAppColors.grey),
           padding: const EdgeInsets.symmetric(vertical: 16.0, horizontal: 20),
           textStyle: const TextStyle(
             fontSize: 16.0,
@@ -19,7 +19,7 @@ class YOutlinedButtonTheme {
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(16.0),
           ),
-        )
+        ),
       );
 
   static final OutlinedButtonThemeData darkOutlinedButtonTheme =
@@ -27,7 +27,7 @@ class YOutlinedButtonTheme {
         style: OutlinedButton.styleFrom(
           elevation: 0,
           foregroundColor: YAppColors.white,
-          side: const BorderSide(color: YAppColors.blueAccent),
+          side: const BorderSide(color: YAppColors.darkGrey),
           padding: const EdgeInsets.symmetric(vertical: 16.0, horizontal: 20),
           textStyle: const TextStyle(
             fontSize: 16.0,
@@ -37,6 +37,6 @@ class YOutlinedButtonTheme {
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(16.0),
           ),
-        )
+        ),
       );
 }

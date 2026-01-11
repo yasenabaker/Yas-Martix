@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:yas_martix/core/constants/image_strings.dart';
 import 'package:yas_martix/core/constants/text_strings.dart';
+import 'package:yas_martix/core/navigation/app_routes.dart';
 import 'package:yas_martix/features/onboarding_screens/cubits/onboarding_cubit/onboarding_cubit.dart';
 import 'package:yas_martix/features/onboarding_screens/widgets/circular_elvated_button.dart';
 import 'package:yas_martix/features/onboarding_screens/widgets/custom_page_indicator.dart';
@@ -28,13 +29,20 @@ class _OnboardingScreensState extends State<OnboardingScreens> {
             return Stack(
               children: [
                 /// Horizantal scrollable pages
-                BlocBuilder<OnboardingCubit, OnboardingState>(
+                BlocConsumer<OnboardingCubit, OnboardingState>(
+                  listenWhen: (previous, current) =>
+                      current is OnboardingLoaded,
+                  listener: (context, state) {
+                    if (state is OnboardingLoaded) {
+                      Navigator.of(context, rootNavigator: true).pushNamed(AppRoutes.loginScreen);
+                    }
+                  },
                   buildWhen: (previous, current) => current != previous,
                   builder: (context, state) {
                     return PageView(
                       controller: cubit.pageController,
                       onPageChanged: cubit.updatePageIndicator,
-                      
+
                       children: const [
                         OnboardingScreen(
                           imageUrl: YImageStrings.onboardingImage1,

@@ -22,6 +22,7 @@ class OnboardingCubit extends Cubit<OnboardingState> {
   /// Update current index & jump to next page
   void nextPage() {
     if (currentPageIndex == 2) {
+      emit(OnboardingLoaded());
     } else {
       int page = currentPageIndex + 1;
       pageController.jumpToPage(page);

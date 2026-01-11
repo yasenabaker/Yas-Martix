@@ -2,12 +2,12 @@ class YImageStrings {
   YImageStrings._();
 
   // -- App Logos
-  static const String darkAppLogo = "";
-  static const String lightAppLogo = "";
+  static const String darkAppLogo = "assets/logos/dark-logo.png";
+  static const String lightAppLogo = "assets/logos/light-logo-removebg-preview.png";
 
   // -- Social Logos
-  static const String google = "";
-  static const String facebook = "";
+  static const String google = "assets/logos/google_icon.png";
+  static const String facebook = "assets/logos/facebook_icon.png";
 
   // -- Onboarding images
 
