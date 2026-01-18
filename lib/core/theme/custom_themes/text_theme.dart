@@ -59,7 +59,8 @@ class YTextTheme {
     ),
     labelMedium: const TextStyle().copyWith(
       fontSize: YSizes.fontSize12,
-      color: YAppColors.black,
+      color: YAppColors.darkGrey,
+      fontWeight: FontWeight.w700,
     ),
   );
 

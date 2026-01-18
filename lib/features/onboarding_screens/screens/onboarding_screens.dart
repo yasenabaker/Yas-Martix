@@ -34,7 +34,10 @@ class _OnboardingScreensState extends State<OnboardingScreens> {
                       current is OnboardingLoaded,
                   listener: (context, state) {
                     if (state is OnboardingLoaded) {
-                      Navigator.of(context, rootNavigator: true).pushNamed(AppRoutes.loginScreen);
+                      Navigator.of(
+                        context,
+                        rootNavigator: true,
+                      ).pushNamed(AppRoutes.loginScreen);
                     }
                   },
                   buildWhen: (previous, current) => current != previous,
@@ -46,18 +49,18 @@ class _OnboardingScreensState extends State<OnboardingScreens> {
                       children: const [
                         OnboardingScreen(
                           imageUrl: YImageStrings.onboardingImage1,
-                          title: YTextStrings.onboardingTitle1,
-                          subTitle: YTextStrings.onboardingSubTitle1,
+                          title: YTexts.onboardingTitle1,
+                          subTitle: YTexts.onboardingSubTitle1,
                         ),
                         OnboardingScreen(
                           imageUrl: YImageStrings.onboardingImage2,
-                          title: YTextStrings.onboardingTitle2,
-                          subTitle: YTextStrings.onboardingSubTitle2,
+                          title: YTexts.onboardingTitle2,
+                          subTitle: YTexts.onboardingSubTitle2,
                         ),
                         OnboardingScreen(
                           imageUrl: YImageStrings.onboardingImage3,
-                          title: YTextStrings.onboardingTitle3,
-                          subTitle: YTextStrings.onboardingSubTitle3,
+                          title: YTexts.onboardingTitle3,
+                          subTitle: YTexts.onboardingSubTitle3,
                         ),
                       ],
                     );

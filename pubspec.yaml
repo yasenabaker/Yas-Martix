@@ -8,6 +8,7 @@ environment:
   sdk: ^3.10.3
 
 dependencies:
+  carousel_slider: ^5.1.1
   cupertino_icons: ^1.0.8
   flutter:
     sdk: flutter
@@ -36,6 +37,10 @@ flutter:
     - assets/icons/
     - assets/logos/
     - assets/lottie/
+    - assets/icons/brands/
+    - assets/icons/categories/
+    - assets/icons/payment_methods/
+    - assets/images/banners/
 
   # example:
   fonts:
@@ -59,13 +64,13 @@ flutter:
 flutter_native_splash:
   color: "#FFFFFF"
   color_dark: "#272727"
-  image: assets/logos/light-logo-removebg-preview.png
-  image_dark: assets/logos/dark-logo.png
+  image: assets/logos/t-store-splash-logo-black.png
+  image_dark: assets/logos/t-store-splash-logo-white.png
 
   android_12:
     color: "#FFFFFF"
     color_dark: "#272727"
-    image: assets/logos/light-logo-removebg-preview.png
-    image_dark: assets/logos/dark-logo.png
+    image: assets/logos/t-store-splash-logo-black.png
+    image_dark: assets/logos/t-store-splash-logo-white.png
 
   web: false

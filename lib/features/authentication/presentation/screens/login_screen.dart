@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:yas_martix/core/common/form_divider.dart';
-import 'package:yas_martix/core/common/social_buttons.dart';
+import 'package:yas_martix/core/common/widgets/login_sign_up/form_divider.dart';
+import 'package:yas_martix/core/common/widgets/login_sign_up/social_buttons.dart';
 import 'package:yas_martix/core/common/styles/spacing_styles.dart';
 import 'package:yas_martix/core/constants/sizes.dart';
 import 'package:yas_martix/core/constants/text_strings.dart';
-import 'package:yas_martix/features/login/presentation/widgets/login_form.dart';
-import 'package:yas_martix/features/login/presentation/widgets/login_header.dart';
+
+import '../widgets/login_form.dart';
+import '../widgets/login_header.dart';
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({super.key});
@@ -25,7 +26,7 @@ class LoginScreen extends StatelessWidget {
               LoginForm(),
 
               /// Divider
-              YFormDivider(text: YTextStrings.orSignInWith),
+              YFormDivider(text: YTexts.orSignInWith),
               const SizedBox(height: YSizes.spaceBtwSections),
 
               /// Footer

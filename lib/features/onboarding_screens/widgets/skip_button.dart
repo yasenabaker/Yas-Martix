@@ -10,7 +10,7 @@ class SkipButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Positioned(
-      top: YDeviceUtils.getAppnBarHeight() - 20,
+      top: YDeviceUtils.getAppBarHeight() - 20,
       right: YSizes.defaultSpace,
       child: TextButton(
         onPressed: cubit.lastPage,

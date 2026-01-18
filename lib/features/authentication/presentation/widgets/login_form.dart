@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:yas_martix/core/constants/sizes.dart';
 import 'package:yas_martix/core/constants/text_strings.dart';
+import 'package:yas_martix/core/helpers/helper_functions.dart';
+import 'package:yas_martix/core/navigation/app_routes.dart';
 
 class LoginForm extends StatelessWidget {
   const LoginForm({super.key});
@@ -17,7 +19,7 @@ class LoginForm extends StatelessWidget {
             TextFormField(
               decoration: InputDecoration(
                 prefixIcon: Icon(Iconsax.direct_right),
-                labelText: YTextStrings.email,
+                labelText: YTexts.email,
               ),
             ),
             const SizedBox(height: YSizes.spaceBtwInputFields),
@@ -26,7 +28,7 @@ class LoginForm extends StatelessWidget {
             TextFormField(
               decoration: InputDecoration(
                 prefixIcon: Icon(Iconsax.password_check),
-                labelText: YTextStrings.password,
+                labelText: YTexts.password,
                 suffixIcon: Icon(Iconsax.eye_slash),
               ),
             ),
@@ -39,15 +41,20 @@ class LoginForm extends StatelessWidget {
                 /// Remember Me
                 Row(
                   children: [
-                    Checkbox(value: true, onChanged: (value) {}),
-                    const Text(YTextStrings.rememberMe),
+                    SizedBox(
+                      width: 24,
+                      height: 24,
+                      child: Checkbox(value: true, onChanged: (value) {}),
+                    ),
+                    const SizedBox(width: YSizes.spaceBtwItmes),
+                    const Text(YTexts.rememberMe),
                   ],
                 ),
 
                 /// Forget Password
                 TextButton(
-                  onPressed: () {},
-                  child: Text(YTextStrings.forgetPassword),
+                  onPressed: () => YHelperFunctions.navigateToScreen(context, AppRoutes.forgetPassword),
+                  child: Text(YTexts.forgetPassword),
                 ),
               ],
             ),
@@ -57,8 +64,8 @@ class LoginForm extends StatelessWidget {
             SizedBox(
               width: double.infinity,
               child: ElevatedButton(
-                onPressed: () {},
-                child: const Text(YTextStrings.signIn),
+                onPressed: () => YHelperFunctions.navigateToScreen(context, AppRoutes.navigationMenu),
+                child: const Text(YTexts.signIn),
               ),
             ),
             const SizedBox(height: YSizes.spaceBtwItmes),
@@ -67,8 +74,8 @@ class LoginForm extends StatelessWidget {
             SizedBox(
               width: double.infinity,
               child: OutlinedButton(
-                onPressed: () {},
-                child: const Text(YTextStrings.creatAccount),
+                onPressed: () => YHelperFunctions.navigateToScreen(context, AppRoutes.signUpScreen),
+                child: const Text(YTexts.creatAccount),
               ),
             ),
           ],
